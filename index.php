@@ -510,6 +510,7 @@ Linkedin: https://www.linkedin.com/in/fabio-siqueira-paula/";
                 </div> 
             </form> 
 
+            
             <div class="modal-footer">
                 <a href="#!" class="modal-close waves-effect waves-green btn-flat blue-grey">Fechar</a>
             </div>

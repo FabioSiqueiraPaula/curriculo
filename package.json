@@ -1,0 +1,12 @@
+{
+  "name": "CurriculoJs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}

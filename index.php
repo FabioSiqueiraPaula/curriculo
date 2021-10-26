@@ -114,7 +114,8 @@
                         <div class="card blue-grey darken-1">
                             <div class="card-content white-text">
                                 <h5 class="header">TECNOLOGIAS</h5>
-                                <table>
+
+                                <table class="table">
                                     <tr>
                                         <th>
                                             <h5 class="_blank">Banco de Dados</h5>
@@ -136,7 +137,7 @@
                                     </tr>
                                 </table>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th>
                                             <h5 class="_blank">Ferramentas p/ Desenvolvimento</h5>
@@ -155,7 +156,7 @@
                                     </tr>
                                 </table>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th>
                                             <h5 class="_blank">Desenvolvimento Web</h5>
@@ -176,7 +177,7 @@
                                     </tr>
                                 </table>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th>
                                             <h5 class="_blank">Sistemas Operacionais</h5>
@@ -211,7 +212,7 @@
                             <div class="card-content white-text">
                                 <h5 class="header">EXPERIENCIA</h5>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th class="blue-grey">
                                             <h5>DIVERTIPLAN, RJ – Analista Suporte</h5>Novembro de 2019 – Abril 2020
@@ -226,7 +227,7 @@
                                     </tr>
                                 </table>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th class="blue-grey">
                                             <h5>ARCADIS LOGOS ENGENHARIA, RJ – Analista Suporte de I nfraestrutura</h5>
@@ -242,7 +243,7 @@
                                     </tr>
                                 </table>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th class="blue-grey">
                                             <h5>ACTIVIA SISTEMAS, RJ – Analista de Suporte de Sistemas</h5> Setembro de
@@ -261,7 +262,7 @@
                                     </tr>
                                 </table>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th class="blue-grey">
                                             <h5>COMISSARIA RIO, RJ - Administrador De Empresas</h5> Março de 2009 - Maio
@@ -286,7 +287,7 @@
                             <div class="card-content white-text">
                                 <h5 class="header">FORMAÇÃO</h5>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th>
                                             <h5 class="_blank">Superior</h5>
@@ -306,7 +307,7 @@
                                     </tr>
                                 </table>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th>
                                             <h5 class="_blank">Técnico</h5>
@@ -334,9 +335,9 @@
                             <div class="card-content white-text">
                                 <h5 class="header">CURSOS</h5>
 
-                                <table>
+                                <table class="table">
                                     <tr>
-                                        <h5 class="_blank">Bootcamp Online</h5>
+                                        <h5 class="_blank">Bootcamp Online / Extensões/ Basicos</h5>
                                     </tr>
                                     <tr>
                                         <th class="blue-grey">
@@ -345,19 +346,14 @@
                                             <p>Cientista de Dados</p>
                                         </th>
                                     </tr>
-                                </table>
-
-                                <table>
-                                    <tr>
-                                        <h5 class="_blank">Extensões/ Basicos</h5>
-                                    </tr>
                                     <tr>
                                         <th class="blue-grey">
                                             <h5>S.O.S COMPUTADORES</h5>
                                             <p>MONTAGEM E MANUTENÇÃO DE MICRO</p>
                                             <p>PACOTE DA MICROSOFT</p>
                                         </th>
-
+                                    </tr>
+                                    <tr>
                                         <th class="blue-grey">
                                             <h5>FACULDADE SIMOSEN</h5>
                                             <p>MARKETING E PROPAGANDA</p>
@@ -379,7 +375,7 @@
                             <div class="card-content white-text">
                                 <h5 class="header">HABILIDADES</h5>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <h5 class="_blank">Análise/Projeto de Sistemas</h5>
                                     </tr>
@@ -407,7 +403,7 @@
                             <div class="card-content white-text">
                                 <h5 class="header">PROJETOS</h5>
 
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th class="blue-grey">
                                             <p>
@@ -439,7 +435,7 @@
                                 </table>
 
                                 <h5 class="header">PROJETO SOCIAL</h5>
-                                <table>
+                                <table class="table">
                                     <tr>
                                         <th class="blue-grey">
                                             <p>
@@ -462,12 +458,20 @@
         </div>
     </div>
 
+    <div class="footer">
+        
+        <?php
+            require "./contador.php";
+        ?>
+        
+    </div>
+
 <?php 
  if ($_POST) 
  {
  //Carrega as classes do PHPMailer
- include("./PHPMailer/class.phpmailer.php"); 
- include("./PHPMailer/class.smtp.php"); 
+ include("phpmailer/class.phpmailer.php"); 
+ include("phpmailer/class.smtp.php"); 
  
  //envia o e-mail para o visitante do site
  $mailDestino = $_POST['txtEmail']; 
@@ -477,7 +481,7 @@
 Tel: (21) 97878-1990 <br/>
 Linkedin: https://www.linkedin.com/in/fabio-siqueira-paula/";
  $assunto = "Obrigado pelo seu contato!";
- include("./envio.php");
+ include("envio.php");
  
  //envia o e-mail para o administrador do site
  $mailDestino = 'fabio79siqueira@gmail.com'; 

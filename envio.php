@@ -17,7 +17,7 @@ $mail->IsHTML = true ; // Enviar como HTML
 $mail->Subject = $assunto ; // Assunto
 $mail->Body = '<br/>' . $mensagem . '<br/>' ; //Corpo da mensagem caso seja HTML
 $mail->AltBody = "$mensagem" ; //PlainText, para caso quem receber o email não aceite o corpo HTML
-$mail->AddAttachment('CurriculoFabio.pdf'); //Anexa o Arquivo
+//$mail->AddAttachment('CurriculoFabio.pdf'); //Anexa o Arquivo
 
 if(!$mail->Send()) // Envia o email
 { 
